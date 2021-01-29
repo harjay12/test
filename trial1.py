@@ -1,5 +1,5 @@
-def func(x):
-    return x
+def add_func(x,y):
+    return x + y
 
 #t='ERWA'
 # print(func(t))
