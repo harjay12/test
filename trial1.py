@@ -8,4 +8,3 @@ print(func(y))
 def test_fact():
     assert (func(k))
 
-# .
