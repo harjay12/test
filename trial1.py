@@ -3,9 +3,9 @@ def func(x):
     return x
 
 t='ERWA'
-print(func(t))
+print(func(y))
 
 def test_fact():
-    assert (func(t))
+    assert (func(k))
 
 # .
