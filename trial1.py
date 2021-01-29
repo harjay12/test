@@ -1,10 +1,9 @@
 def func(x):
-   
     return x
 
-t='ERWA'
-print(func(y))
+#t='ERWA'
+# print(func(t))
 
-def test_fact():
-    assert (func(k))
+# def test_fact():
+#     assert (func(t))
 
