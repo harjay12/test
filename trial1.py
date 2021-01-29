@@ -7,3 +7,5 @@ print(func(t))
 
 def test_fact():
     assert (func(t))
+
+
