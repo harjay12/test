@@ -15,9 +15,6 @@ jobs:
       - name: Set up Python 3.6
         uses: actions/setup-python@v1
         with:
-        path: venv
-        key: ${{ runner.os }}-py${{ steps.setup-python.outputs.python-version }}-venv-${{ hashFiles('setup.py') }}
-        with:
           python-version: 3.6
       - name: Install dependencies
         run: |
