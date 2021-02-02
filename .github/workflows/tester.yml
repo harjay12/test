@@ -19,7 +19,8 @@ jobs:
         env:
           GITHUB_CONTEXT: ${{secrets.API_KEYS }}
           run: |
-            echo "$GITHUB_CONTEXT"
+            echo "$GITHUB_CONTEXT is: "
+            echo GITHUB_CONTEXT
 
   # build:
   #   runs-on: ubuntu-latest
