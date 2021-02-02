@@ -12,7 +12,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - shell: bash
       env:
         key: ${{ secrets.API_KEYS }}
       - uses: actions/checkout@v2
