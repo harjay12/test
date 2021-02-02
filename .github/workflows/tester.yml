@@ -8,25 +8,32 @@ on:
       - main
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    env:
-      key: ${{ secrets.API_KEYS }}
+  secrets-in-github-actions:
+  runs-on: ubuntu-latest
+  steps:
+    - name: step 1 -Echo out a github action secrete key.
+      run: |
+        echo "The github secret keys is: "
+        echo ${{secret.API_KEYS}}
 
-    steps:
-      - uses: actions/checkout@v2
-      - name: Set up Python 3.6
-        uses: actions/setup-python@v1
+  # build:
+  #   runs-on: ubuntu-latest
+  #   env:
+  #     key: ${{ secrets.API_KEYS }}
 
-        with:
-          python-version: 3.6
-      - name: Install dependencies
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - name: Set up Python 3.6
+  #       uses: actions/setup-python@v1
 
-        run: |
-          python -m pip install --upgrade pip
-          pip install -U pytest
-           pip install requests
-            pip install python-dotenv
-            example-command "$key"
-      - name: Test with pytest
-        run: pytest -vv
+  #       with:
+  #         python-version: 3.6
+  #     - name: Install dependencies
+
+  #       run: |
+  #         python -m pip install --upgrade pip
+  #         pip install -U pytest
+  #          pip install requests
+  #           pip install python-dotenv
+  #     - name: Test with pytest
+  #       run: pytest -vv
