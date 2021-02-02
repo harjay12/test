@@ -15,7 +15,7 @@ jobs:
         env:
           key: ${{secrets.API_KEYS }}
         run: |
-          echo ${{key}}
+          echo ${{env.key}}
 
   # build:
   #   runs-on: ubuntu-latest
