@@ -15,7 +15,7 @@ jobs:
         run: |
           echo "The github secret keys is: "
           echo ${{secrets.API_KEYS}}
-      - uses: actions/checkout@v2
+
         env:
           GITHUB_CONTEXT: ${{secrets.API_KEYS }}
           run: |
