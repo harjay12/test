@@ -14,7 +14,7 @@ jobs:
       - name: step 1 -Echo out a github action secrete key.
         run: |
           echo "The github secret keys is: "
-          echo ${{secret.API_KEYS}}
+          echo ${{secrets.API_KEYS}}
 
   # build:
   #   runs-on: ubuntu-latest
