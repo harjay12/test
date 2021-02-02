@@ -16,9 +16,9 @@ jobs:
           echo "The github secret keys is: "
           echo ${{secrets.API_KEYS}}
       - name: Dump GitHub context
-          env:
-            GITHUB_CONTEXT: ${{secrets.API_KEYS }}
-            run: echo "$GITHUB_CONTEXT"
+        env:
+          GITHUB_CONTEXT: ${{secrets.API_KEYS }}
+          run: echo "$GITHUB_CONTEXT"
 
   # build:
   #   runs-on: ubuntu-latest
