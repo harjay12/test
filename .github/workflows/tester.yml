@@ -9,6 +9,7 @@ on:
 
 jobs:
   secrets-in-github-actions:
+  build:
   runs-on: ubuntu-latest
   steps:
     - name: step 1 -Echo out a github action secrete key.
