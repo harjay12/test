@@ -6,7 +6,8 @@ def add_func(x,y):
 
 
 
-envkey=os.environ.get("API_KEY")
+#envkey=os.environ.get("API_KEY")
+envkey: ${{ secrets.API_KEYS }}
 URL = 'https://api.data.gov/ed/collegescorecard/v1/schools.json?'
 
 def accessingapi(url):
