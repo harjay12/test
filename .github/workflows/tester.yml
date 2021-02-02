@@ -11,11 +11,10 @@ jobs:
   secrets-in-github-actions:
     runs-on: ubuntu-latest
     steps:
-     
       - name: step 1 -Echo out a github action secrete key.
-      run: |
-        env:
-          GITHUB_CONTEXT: ${{secrets.API_KEYS }}
+        run: |
+          env:
+            GITHUB_CONTEXT: ${{secrets.API_KEYS }}
 
   # build:
   #   runs-on: ubuntu-latest
