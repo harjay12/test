@@ -10,7 +10,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    envkey: ${{ secrets.API_KEYS }}
+    env: ${{ secrets.API_KEYS }}
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python 3.6
