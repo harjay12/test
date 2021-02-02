@@ -17,7 +17,7 @@ jobs:
           run: |
             echo "The github secret keys is: "
             echo ${{secrets.API_KEYS}}
-            echo GITHUB_CONTEXT
+            echo env.GITHUB_CONTEXT
 
   # build:
   #   runs-on: ubuntu-latest
