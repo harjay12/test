@@ -12,10 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: step 1 -Echo out a github action secrete key.
-        run: |
-          echo "The github secret keys is: "
-          echo ${{secrets.API_KEYS}}
-
         env:
           GITHUB_CONTEXT: ${{secrets.API_KEYS }}
           run: |
