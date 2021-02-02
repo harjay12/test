@@ -22,6 +22,8 @@ jobs:
       - name: Install dependencies
 
         run: |
+          echo "The key is:"
+          echo ${{env.API_KEY}}
           python -m pip install --upgrade pip
           pip install -U pytest
           pip install requests
