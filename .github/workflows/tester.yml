@@ -21,11 +21,12 @@ jobs:
         with:
           python-version: 3.6
       - name: Install dependencies
+
         run: |
           python -m pip install --upgrade pip
           pip install -U pytest
            pip install requests
             pip install python-dotenv
-
+            example-command "$key"
       - name: Test with pytest
         run: pytest -vv
