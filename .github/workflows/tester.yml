@@ -11,10 +11,10 @@ jobs:
   secrets-in-github-actions:
     runs-on: ubuntu-latest
     steps:
-    - name: Dump GitHub context
+      - name: Dump GitHub context
         env:
           GITHUB_CONTEXT: ${{ secrets.API_KEYS }}
-        run: echo "$GITHUB_CONTEXT"
+          run: echo "$GITHUB_CONTEXT"
       - name: step 1 -Echo out a github action secrete key.
         run: |
           echo "The github secret keys is: "
